@@ -16,4 +16,4 @@ RUN  adduser -H -s /bin/false -D node_exporter && \
 
 EXPOSE     9100
 USER       node_exporter
-CMD        [ "/bin/node_exporter"]
+ENTRYPOINT [ "/bin/node_exporter"]
